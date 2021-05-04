@@ -6,8 +6,7 @@
   
 ##  시스템 구성도 
 
- ![제목 없음](https://user-images.githubusercontent.com/74276139/116989141-50199a00-ad0c-11eb-9157-835f0de2b140.jpg)
-
+![제목없음2](https://user-images.githubusercontent.com/74276139/116991064-f9618f80-ad0e-11eb-96f4-0f0300a724d7.jpg)
 
 ##  환경 구성    
 * Elastic Stack 64bit (Server 환경) - Host
