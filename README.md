@@ -10,25 +10,26 @@
 
 ##  환경 구성    
 * Elastic Stack 64bit (Server 환경) - Host
-  - Elastic Logstach (Optional) 설치
-    > https://www.elastic.co/kr/downloads/logstash
-
   - Elastic Elasticsearch 설치
     > https://www.elastic.co/kr/downloads/elasticsearch
 
   - Elastic Kibana 설치
     > https://www.elastic.co/kr/downloads/kibana
+    
+  - Elastic Logstach (Optional) 설치
+    > https://www.elastic.co/kr/downloads/logstash
 
 * Windows 7 32bit (Endpoint 환경) - VM 구성
   - Python 2.7 32bit
   - Elastic Winlogbeat 7.6.2
   - sysmon
     > microsoft의 sysinternals.com
-  - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
-    > https://github.com/endgameinc/RTA
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
     > https://github.com/SwiftOnSecurity/sysmon-config
-
+    
+  - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
+    > https://github.com/endgameinc/RTA
+    
 * Ubuntu 18.04 64bit 환경
   - Yelp의 elastalert
     > https://github.com/Yelp/elastalert
@@ -71,9 +72,9 @@
  ## 오류 수정 
  [[ windows 7 ]]
  * sysmon 10.x 실행 오류
-   > kb2533623 설치 (wevtapi.dll 문제)
-   
    > kb3033929 설치
+   
+   > kb2533623 설치 (wevtapi.dll 문제)
 
 * sysmon-config.xml
 
