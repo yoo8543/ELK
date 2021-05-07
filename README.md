@@ -77,23 +77,35 @@
 
 * sysmon-config.xml
   **변경전** 
+     
     > \<PipeEvent onmatch="exclude"\>
+	
     > \<EVENTID condition="is"\>1\</EVENTID\> 
+     
     > \<\/PipeEvent\>
           
-  **변경후**   
-     > \<PipeEvent onmatch="include"\>		
+   **변경후**   
+   
+     > \<PipeEvent onmatch="include"\>
+			
      >**삭제**
+	
      > \</PipeEvent\>
           
-  **변경전**
+   **변경전**
+   
      > \<WmiEvent onmatch="include"\>
+		
      >    \<Operation condition="is">Created</Operation\> 
+            
      > \</WmiEvent\>
            
-  **변경후**     
+   **변경후**     
+   
      > \<WmiEvent onmatch="include"\>
+	
      > **삭제** 
+	
      > \</WmiEvent\>
         
 [[ Elasticsearch ]] 
