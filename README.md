@@ -70,7 +70,7 @@
  ## 오류 수정 
  [[ windows 7 ]]
  * sysmon 10.x 실행 오류
-   > kb3033929 설치
+   > kb3033929 설치  
    > kb2533623 설치 (wevtapi.dll 문제)
 
 * sysmon-config.xml  
