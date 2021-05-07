@@ -84,29 +84,29 @@
      
     > \<\/PipeEvent\>
           
-   **변경후**   
+  **변경후**   
    
-     > \<PipeEvent onmatch="include"\>
+    > \<PipeEvent onmatch="include"\>
 			
-     >**삭제**
+    >**삭제**
 	
-     > \</PipeEvent\>
+    > \</PipeEvent\>
           
-   **변경전**
+  **변경전**
    
-     > \<WmiEvent onmatch="include"\>
+    > \<WmiEvent onmatch="include"\>
 		
-     >    \<Operation condition="is">Created</Operation\> 
+    >    \<Operation condition="is">Created</Operation\> 
             
-     > \</WmiEvent\>
+    > \</WmiEvent\>
            
-   **변경후**     
+  **변경후**     
    
-     > \<WmiEvent onmatch="include"\>
+    > \<WmiEvent onmatch="include"\>
 	
-     > **삭제** 
+    > **삭제** 
 	
-     > \</WmiEvent\>
+    > \</WmiEvent\>
         
 [[ Elasticsearch ]] 
 * network.host 설정 bootstrap checks failed
