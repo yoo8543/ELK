@@ -84,7 +84,7 @@
      
     > \<\/PipeEvent\>
           
-  **변경후**   
+  - 변경후   
    
     > \<PipeEvent onmatch="include"\>
 			
@@ -92,7 +92,7 @@
 	
     > \</PipeEvent\>  
           
-  **변경전**
+  - 변경전
    
     > \<WmiEvent onmatch="include"\>
 		
@@ -100,7 +100,7 @@
             
     > \</WmiEvent\>
            
-  **변경후**     
+  - 변경후     
    
     > \<WmiEvent onmatch="include"\>
 	
