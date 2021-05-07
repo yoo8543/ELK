@@ -15,7 +15,7 @@
     > 설치 후 확인=> localhost:9200
 
   - Elastic Kibana 설치 (버전:7.11.2)
-    > https://www.elastic.co/kr/downloads/kibana
+    > https://www.elastic.co/kr/downloads/kibana  
     > 설치 후 확인=> localhost:5601
     
   - Elastic Logstach (Optional) 설치
@@ -48,7 +48,7 @@
   > bin/kibana.bat
 
 * Windows7 sysmon vm 환경 실행
-  > sysmon config파일을 다운받아서 sysmon파일안에 넣어준다
+  > sysmon config파일을 다운받아서 sysmon파일안에 넣어준다  
   > cmd(관리자계정)에서 sysmon.exe -i %configfile% 입력
 
 * Windows7 sysmon vm 환경에서 winlogbeat 실행(관리자 계정)
