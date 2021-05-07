@@ -76,7 +76,7 @@
    > kb2533623 설치 (wevtapi.dll 문제)
 
 * sysmon-config.xml  
-  **변경전** 
+  - 변경전 
      
     > \<PipeEvent onmatch="exclude"\>
 	
