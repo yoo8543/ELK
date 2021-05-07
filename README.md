@@ -12,11 +12,11 @@
 * Elastic Stack 64bit (Server 환경) - Host
   - Elastic Elasticsearch 설치 (버전:7.11.2)
     > https://www.elastic.co/kr/downloads/elasticsearch
-    > 확인=> localhost:9200
+    > 설치 후 확인=> localhost:9200
 
   - Elastic Kibana 설치 (버전:7.11.2)
     > https://www.elastic.co/kr/downloads/kibana
-    > 확인=> localhost:5601
+    > 설치 후 확인=> localhost:5601
     
   - Elastic Logstach (Optional) 설치
     > https://www.elastic.co/kr/downloads/logstash
