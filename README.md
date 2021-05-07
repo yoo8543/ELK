@@ -33,7 +33,7 @@
   - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
     > https://github.com/endgameinc/RTA
     
-* Ubuntu 18.04 64bit 환경
+* Ubuntu 18.04 64bit 환경 - VM 구성
   - Yelp의 elastalert
     > https://github.com/Yelp/elastalert
 
