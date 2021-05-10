@@ -27,8 +27,8 @@
     > 4. Start-Service winlogbeat  
   - sysmon
     > https://docs.microsoft.com/ko-kr/sysinternals/  
-    > sysmonconfig-export.xml파일을 sysmon파일 안에 넣어줌  
-    > cmd(관리자)실행 후 sysmon파일로 경로 이동해주고 명령문 입력  
+    > 1. sysmonconfig-export.xml파일을 sysmon파일 안에 넣어줌  
+    > 2. cmd(관리자)실행 후 sysmon파일로 경로 이동해주고 명령문 입력  
     > Sysmon.exe -accepteula -i C:\Sysmon\sysmonconfig-export.xml -l -n
     
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
