@@ -25,17 +25,12 @@
     > -E output.elasticsearch.hosts=['192.168.0.12:9200']'  
     > -E output.kibana.host=192.168.0.12:5601  
     > 4. Start-Service winlogbeat  
+    > 5. .\winlogbeat.exe setup -dashboards
   - sysmon
     > https://docs.microsoft.com/ko-kr/sysinternals/  
     > 1. sysmonconfig-export.xml파일을 sysmon파일 안에 넣어줌  
     > 2. cmd(관리자)실행 후 sysmon파일로 경로 이동해주고 명령문 입력  
     > Sysmon.exe -accepteula -i C:\Sysmon\sysmonconfig-export.xml -l -n
-    
-  - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
-    > https://github.com/SwiftOnSecurity/sysmon-config
-    
-  - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
-    > https://github.com/endgameinc/RTA
     
 * Ubuntu 18.04 64bit 환경 - VM 구성
   - Yelp의 elastalert
@@ -53,7 +48,7 @@
   > elasticsearch.hosts: ["http://192.168.0.12:9200"]  
 * Winlogbeat.yml
   > kibana부분에서 host: "192.168.0.12:5601"
-  > elasticsearch output부분에서 hosts: ["192.168.0.12:9200"]
+  > elasticsearch부분에서 hosts: ["192.168.0.12:9200"]
 
 ##  실행 방법
 * Elasticsearch 실행(관리자 계정)
@@ -86,11 +81,19 @@
    > Set-ExecutionPolicy bypass  
  * sysmon 10.x 실행 오류
    > kb3033929 설치  
-        
-[[ Elasticsearch ]] 
 
 [[ Elastalert ]]
-  
+ * git 오류
+   > $sudo apt install git  
+ * Elastalert 실행 오류
+   > 1. "python setup.py egg_info" failed with error code 1  
+   > $sudo pip3 install --upgrade pip  
+   > 2. AttributeError: module 'yaml' has no attribute 'FullLoader'  
+   > $sudo python3 -m pip install -U pip numpy  
+   > $pip3 install -U PyYAML  
+   > 3. urllib3(1.26.4) or chardet(3.0.4) doesn't match a supported version!  
+   > $sudo pip3 install --upgrade requests  
+ 
 ## Contributors
 * maxup37
 * idk3669
