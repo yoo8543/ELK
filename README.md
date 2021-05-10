@@ -3,7 +3,18 @@
 ##  목표 구성도 참고 
 * Open Source Endpoint monitoring 
   - https://github.com/DearBytes/Opensource-Endpoint-Monitoring
-  
+
+## 메뉴얼 
+
+* sysmon
+  > https://github.com/trustedsec/SysmonCommunityGuide/blob/master/Sysmon.md
+
+* elastic
+  > https://www.elastic.co/guide/en/elastic-stack-get-started/7.6/get-started-elastic-stack.html#install-elasticsearch
+
+* elastalert
+  > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
+
 ##  시스템 구성도 
 
 ![제목 없음3](https://user-images.githubusercontent.com/74276139/116993319-485cf400-ad12-11eb-9823-eca9bafe4f15.jpg)
@@ -58,18 +69,7 @@
 
 * Ubuntu 18.04 64bit 환경에서 Elasticalert 실행(elastalert폴더안에서 실행)
   > $python3 -m elastalert.elastalert --config config.yaml --verbose --rule example_rules/example_frequency.yaml
- 
-## 메뉴얼 
 
-* sysmon
-  > https://github.com/trustedsec/SysmonCommunityGuide/blob/master/Sysmon.md
-
-* elastic
-  > https://www.elastic.co/guide/en/elastic-stack-get-started/7.6/get-started-elastic-stack.html#install-elasticsearch
-
-* elastalert
-  > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
-  
  ## 오류 수정 
  [[ windows 7 ]]
  * winlogbeat 실행정책 오류
