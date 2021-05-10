@@ -21,10 +21,10 @@
   - Elastic Winlogbeat (버전:7.11.2) 설치
     > 1. C:program files에 Winlogbeat 파일이름 설정해서 넣어줌  
     > 2. powershell(관리자) 실행 후 .\install-service-winlogbeat.ps1 명령 실행  
-    > 3. .\winlogbeat.exe setup -e'
-    > -E output.elasticsearch.hosts=['192.168.0.12:9200']'
-    > -E output.kibana.host=192.168.0.12:5601
-    > 4. Start-Service winlogbeat
+    > 3. .\winlogbeat.exe setup -e'  
+    > -E output.elasticsearch.hosts=['192.168.0.12:9200']'  
+    > -E output.kibana.host=192.168.0.12:5601  
+    > 4. Start-Service winlogbeat  
   - sysmon
     > https://docs.microsoft.com/ko-kr/sysinternals/
     
