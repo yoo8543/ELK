@@ -11,14 +11,15 @@
 ##  환경 구성    
 * Elastic Stack 64bit (Server 환경) - Host
   - Elastic Elasticsearch 설치 (버전:7.11.2)
-    > https://www.elastic.co/kr/downloads/elasticsearch
+    > https://www.elastic.co/kr/downloads/past-releases/elasticsearch-7-11-2
 
   - Elastic Kibana 설치 (버전:7.11.2)
-    > https://www.elastic.co/kr/downloads/kibana
+    > https://www.elastic.co/kr/downloads/past-releases/kibana-7-11-2
 
 * Windows 7 32bit (Endpoint 환경) - VM 구성
   - Python 2.7 32bit 설치
   - Elastic Winlogbeat (버전:7.11.2) 설치
+    > https://www.elastic.co/kr/downloads/past-releases/winlogbeat-7-11-2
     > 1. C:program files에 Winlogbeat 파일이름 설정해서 넣어줌  
     > 2. powershell(관리자) 실행 후 .\install-service-winlogbeat.ps1 명령 실행  
     > 3. .\winlogbeat.exe setup -e'  
