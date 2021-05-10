@@ -57,7 +57,7 @@
   > server.host: "192.168.0.12"  
   > elasticsearch.hosts: ["http://192.168.0.12:9200"]  
 * Winlogbeat.yml
-  > kibana부분에서 host: "192.168.0.12:5601"
+  > kibana부분에서 host: "192.168.0.12:5601"  
   > elasticsearch부분에서 hosts: ["192.168.0.12:9200"]
 
 ##  실행 방법
