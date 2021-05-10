@@ -44,16 +44,23 @@
   - elastalert 설치
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
+## 설정파일 바꾸는 법(ip자리는 다 host ip삽입)
+* Elasticsearch.yml
+  > network.host: 192.168.0.12  
+  > discovery.seed_hosts: ["127.0.0.1", "[::1]"]
+* Kibana.yml
+  > server.host: "192.168.0.12"  
+  > elasticsearch.hosts: ["http://192.168.0.12:9200"]  
+* Winlogbeat.yml
+  > kibana부분에서 host: "192.168.0.12:5601"
+  > elasticsearch output부분에서 hosts: ["192.168.0.12:9200"]
+
 ##  실행 방법
 * Elasticsearch 실행(관리자 계정)
   > bin/elasticsearch.bat
 
 * Elastic Kibana 실행(관리자 계정)
   > bin/kibana.bat
-
-* Windows7 sysmon vm 환경 실행
-  > sysmon config파일을 다운받아서 sysmon파일안에 넣어준다  
-  > cmd(관리자계정)에서 sysmon.exe -i %configfile% 입력
 
 * Windows7 sysmon vm 환경에서 winlogbeat 실행(관리자 계정)
   > winlogbeat.exe -c winlogbeat.yml
@@ -79,47 +86,10 @@
    > Set-ExecutionPolicy bypass  
  * sysmon 10.x 실행 오류
    > kb3033929 설치  
-
-* sysmon-config.xml  
-  - 변경전 
-     
-    > \<PipeEvent onmatch="exclude"\>
-	
-    > \<EVENTID condition="is"\>1\</EVENTID\> 
-     
-    > \<\/PipeEvent\>
-          
-  - 변경후   
-   
-    > \<PipeEvent onmatch="include"\>
-			
-    >**삭제**
-	
-    > \</PipeEvent\>  
-          
-  - 변경전
-   
-    > \<WmiEvent onmatch="include"\>
-		
-    >    \<Operation condition="is">Created</Operation\> 
-            
-    > \</WmiEvent\>
-           
-  - 변경후     
-   
-    > \<WmiEvent onmatch="include"\>
-	
-    > **삭제** 
-	
-    > \</WmiEvent\>
         
 [[ Elasticsearch ]] 
-* network.host 설정 bootstrap checks failed
-  > https://soye0n.tistory.com/178
 
 [[ Elastalert ]]
-* pip install 오류
-  > python version 3.6 다운
   
 ## Contributors
 * maxup37
