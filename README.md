@@ -57,9 +57,6 @@
 * Elastic Kibana 실행(관리자 계정)
   > bin/kibana.bat
 
-* Windows7 sysmon vm 환경에서 winlogbeat 실행(관리자 계정)
-  > winlogbeat.exe -c winlogbeat.yml
-
 * Ubuntu 18.04 64bit 환경에서 Elasticalert 실행(elastalert폴더안에서 실행)
   > $python3 -m elastalert.elastalert --config config.yaml --verbose --rule example_rules/example_frequency.yaml
  
