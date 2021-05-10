@@ -15,13 +15,11 @@
 
   - Elastic Kibana 설치 (버전:7.11.2)
     > https://www.elastic.co/kr/downloads/kibana
-    
-  - Elastic Logstach (Optional) 설치
-    > https://www.elastic.co/kr/downloads/logstash
 
 * Windows 7 32bit (Endpoint 환경) - VM 구성
-  - Python 2.7 32bit
-  - Elastic Winlogbeat (버전:7.11.2)
+  - Python 2.7 32bit 설치
+  - Elastic Winlogbeat (버전:7.11.2) 설치
+    > 테스트
   - sysmon
     > https://docs.microsoft.com/ko-kr/sysinternals/
     
