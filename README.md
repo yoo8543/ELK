@@ -26,7 +26,10 @@
     > -E output.kibana.host=192.168.0.12:5601  
     > 4. Start-Service winlogbeat  
   - sysmon
-    > https://docs.microsoft.com/ko-kr/sysinternals/
+    > https://docs.microsoft.com/ko-kr/sysinternals/  
+    > sysmonconfig-export.xml파일을 sysmon파일 안에 넣어줌  
+    > cmd(관리자)실행 후 sysmon파일로 경로 이동해주고 명령문 입력  
+    > Sysmon.exe -accepteula -i C:\Sysmon\sysmonconfig-export.xml -l -n
     
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
     > https://github.com/SwiftOnSecurity/sysmon-config
@@ -73,10 +76,9 @@
  ## 오류 수정 
  [[ windows 7 ]]
  * winlogbeat 실행정책 오류
-   > Set-ExecutionPolicy bypass
+   > Set-ExecutionPolicy bypass  
  * sysmon 10.x 실행 오류
    > kb3033929 설치  
-   > kb2533623 설치 (wevtapi.dll 문제)
 
 * sysmon-config.xml  
   - 변경전 
