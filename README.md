@@ -49,7 +49,7 @@
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html  
     > https://sg-choi.tistory.com/309
 
-## 설정파일 바꾸는 법(ip자리는 다 host ip삽입)
+## 설정파일 바꾸는 법(ip자리는 host ip삽입)
 * Elasticsearch.yml
   > network.host: 192.168.0.12  
   > discovery.seed_hosts: ["127.0.0.1", "[::1]"]
