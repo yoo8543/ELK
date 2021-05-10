@@ -33,11 +33,9 @@
     > Sysmon.exe -accepteula -i C:\Sysmon\sysmonconfig-export.xml -l -n
     
 * Ubuntu 18.04 64bit 환경 - VM 구성
-  - Yelp의 elastalert
-    > https://github.com/Yelp/elastalert
-
   - elastalert 설치
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
+    > https://sg-choi.tistory.com/309
 
 ## 설정파일 바꾸는 법(ip자리는 다 host ip삽입)
 * Elasticsearch.yml
