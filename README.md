@@ -49,6 +49,8 @@
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html  
     > https://sg-choi.tistory.com/309
 
+## 네트워크 구성도
+
 ## 설정파일 바꾸는 법(ip자리는 host ip삽입)
 * Elasticsearch.yml
   > network.host: 192.168.0.12  
