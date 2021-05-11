@@ -54,7 +54,7 @@
 ## 설정파일 바꾸는 법(ip자리는 host ip삽입)
 * Elasticsearch.yml
   > network.host: 192.168.0.12  
-  > discovery.seed_hosts: ["127.0.0.1", "[::1]"]
+  > discovery.seed_hosts: ["127.0.0.1", "[::1]"](이건 이대로 적어야함)
 * Kibana.yml
   > server.host: "192.168.0.12"  
   > elasticsearch.hosts: ["http://192.168.0.12:9200"]  
