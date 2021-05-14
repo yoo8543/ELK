@@ -50,6 +50,7 @@
     > https://sg-choi.tistory.com/309
 
 ## 네트워크 구성도
+![캡처](https://user-images.githubusercontent.com/74276139/118220434-a7f79400-b4b6-11eb-8d04-cf56464f615b.JPG)  
 
 ## 설정파일 바꾸는 법(ip자리는 host ip삽입)
 * Elasticsearch.yml
