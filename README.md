@@ -75,13 +75,13 @@
 
 ## sigma_rule
 * ubuntu_18.04  
-  > sudo pip3 install sigmatools  
-  > git clone https://github.com/Neo23x0/sigma.git  
-  > cd sigma  
-  > cp -r rules/windows ~ (home디렉토리에 복사)  
-  > sudo sigmac -t elastalert -r -c winlogbeat ~/windows -o ~/test  
-  > cd ~  
-  > csplit --prefix sigma_ --suffix-format "%04d.yml" test "/^alert:/" "{*}"  
+  > $sudo pip3 install sigmatools  
+  > $git clone https://github.com/Neo23x0/sigma.git  
+  > $cd sigma  
+  > $cp -r rules/windows ~ (home디렉토리에 복사)  
+  > $sudo sigmac -t elastalert -r -c winlogbeat ~/windows -o ~/test  
+  > $cd ~  
+  > $csplit --prefix sigma_ --suffix-format "%04d.yml" test "/^alert:/" "{*}"  
   > 
 
  ## 오류 수정 
