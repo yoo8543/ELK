@@ -79,6 +79,8 @@
   > git clone https://github.com/Neo23x0/sigma.git  
   > cd sigma  
   > cp -r rules/windows ~ (home디렉토리에 복사)  
+  > sudo sigmac -t elastalert -r -c winlogbeat ~/windows -o ~/test  
+  > 
 
  ## 오류 수정 
  [[ windows 7 ]]
@@ -98,6 +100,9 @@
    > $pip3 install -U PyYAML  
    > 3. urllib3(1.26.4) or chardet(3.0.4) doesn't match a supported version!  
    > $sudo pip3 install --upgrade requests  
+ * sigma rule 오류
+   > An unsupported feature is required for this sigma rule ([파일이름]) : None : The 'near' ~~~~  
+   > $rm 파일이름
  
 ## Contributors
 * maxup37
