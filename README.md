@@ -81,7 +81,7 @@
   > $cp -r rules/windows ~ (home디렉토리에 복사)  
   > $sudo sigmac -t elastalert -r -c winlogbeat ~/windows -o ~/test  
   > $cd ~  
-  > csplit --prefix sigma_ --suffix-format "%04d.yml" test "/^alert:/" "{*}"  
+  > csplit --prefix sigma_ --suffix-format "%04d.yml" test "/^alert:/" "{*}"    
   > mv ./sigma_*.yml elastalert/example_rules  
 
  ## 오류 수정 
