@@ -107,11 +107,11 @@
 * rule 파일 수정
   > 아래 내용을 rule 파일 마지막에 입력  
   > alert:  
-  > - slack:  
+  > \- slack:  
   >      slack_webhook_url: "(webhook에서 복사한 url)"  
   >      slack_username_override: "ZEUS"  
   >      slack_channel_override: "#(webhook에서 설정한 메세지 받을 채널이름)"  
-  >      slack_emoji_override: ":zap:"  
+  >      slack_emoji_override: \":zap:"  
   >      slack_msg_color: "danger"  
 
  ## 오류 수정 
