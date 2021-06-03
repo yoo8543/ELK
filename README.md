@@ -80,9 +80,11 @@
   > $git clone https://github.com/Neo23x0/sigma.git  
   > $cd sigma  
 * home 디렉토리에 복사
-  > $cp -r rules/windows ~ (home디렉토리에 복사)  
+  > $cp -r rules/windows ~  
+* 실행
   > $sudo sigmac -t elastalert -r -c winlogbeat ~/windows -o ~/test  
   > $cd ~  
+* 실행 후 생성된 파일 원하는 폴더로 옮기기
   > $csplit --prefix sigma_ --suffix-format "%04d.yml" test "/^alert:/" "{\*}"  
   > $mv ./sigma_\*.yml elastalert/example_rules  
 
