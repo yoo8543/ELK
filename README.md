@@ -84,6 +84,12 @@
   > $csplit --prefix sigma_ --suffix-format "%04d.yml" test "/^alert:/" "{\*}"  
   > $mv ./sigma_\*.yml elastalert/example_rules  
 
+## slack  
+* ubuntu_18.04  
+  > 참고:https://miiingo.tistory.com/223  
+  > slack 다운로드(https://slack.com/intl/ko-kr/downloads/windows)  
+  > 로그인 후 워크스페이스 생성 (이하 elk)  
+
  ## 오류 수정 
  [[ windows 7 ]]
  * winlogbeat 실행정책 오류
