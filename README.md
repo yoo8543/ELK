@@ -115,6 +115,9 @@
   >      slack_emoji_override: ":(메세지를 올릴 유저의 이모지(ex.zap)):"  
   >      slack_msg_color: "(메세지 색깔(ex.danger))"  
   > ```  
+* elastalert 실행
+  > elastalert --verbose --config config.yaml --rule example_rules\example_frequency
+  > window7에서 rta를 실행시키면 slack에 메세지 발생
 
  ## 오류 수정 
  [[ windows 7 ]]
