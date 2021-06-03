@@ -88,11 +88,19 @@
   > $csplit --prefix sigma_ --suffix-format "%04d.yml" test "/^alert:/" "{\*}"  
   > $mv ./sigma_\*.yml elastalert/example_rules  
 
-## slack  
-* ubuntu_18.04  
-  > 참고:https://miiingo.tistory.com/223  
-  > slack 다운로드(https://slack.com/intl/ko-kr/downloads/windows)  
+## slack(ubuntu_18.04)  
+* 참고사이트
+  > https://miiingo.tistory.com/223  
+* slack 다운로드
+  > https://slack.com/intl/ko-kr/downloads/windows  
   > 로그인 후 워크스페이스 생성 (이하 elk)  
+* Incoming WebHook 설정
+  > slack 프로그램 내 만든 워크스페이스 접속  
+  > slack 찾아보기 -> 앱 -> incoming webhook 검색 후 추가  
+  > 홈페이지 자동 접속 -> slack에 추가 버튼 클릭 -> 메세지를 띄울 채널 선택  
+  > 수신 웹후크 통합 앱 추가 버튼 클릭  
+  > 웹후크 URL 복사해놓기
+  > 창 닫아도 접속 가능 : https://XXXXX(만든 워크스페이스의 이름).slack.com/services/new/incoming-webhook  
 
  ## 오류 수정 
  [[ windows 7 ]]
