@@ -109,10 +109,10 @@
   > alert:  
   > \- slack:  
   >      slack_webhook_url: "(webhook에서 복사한 url)"  
-  >      slack_username_override: "ZEUS"  
-  >      slack_channel_override: "#(webhook에서 설정한 메세지 받을 채널이름)"  
-  >      slack_emoji_override: ":\zap:"  
-  >      slack_msg_color: "danger"  
+  >      slack_username_override: "(메세지를 올릴 유저명(ex.young))"  
+  >      slack_channel_override: "#(webhook에서 설정한 메세지 받을 채널이름(ex.work))"  
+  >      slack_emoji_override: ":(메세지를 올릴 유저의 이모지(ex.zap)):"  
+  >      slack_msg_color: "(메세지 색깔(ex.danger))"  
 
  ## 오류 수정 
  [[ windows 7 ]]
