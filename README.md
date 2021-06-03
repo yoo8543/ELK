@@ -73,11 +73,13 @@
 * Ubuntu 18.04 64bit 환경에서 Elasticalert 실행(elastalert폴더안에서 실행)
   > $python3 -m elastalert.elastalert --config config.yaml --verbose --rule example_rules\example_frequency.yaml
 
-## sigma_rule
-* ubuntu_18.04  
+## sigma_rule (ubuntu_18.04)
+* sigmatools 설치
   > $sudo pip3 install sigmatools  
+* sigma git 가져오기
   > $git clone https://github.com/Neo23x0/sigma.git  
   > $cd sigma  
+* home 디렉토리에 복사
   > $cp -r rules/windows ~ (home디렉토리에 복사)  
   > $sudo sigmac -t elastalert -r -c winlogbeat ~/windows -o ~/test  
   > $cd ~  
