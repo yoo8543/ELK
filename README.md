@@ -101,6 +101,18 @@
   > d. 수신 웹후크 통합 앱 추가 버튼 클릭  
   > e. 웹후크 URL 복사해놓기
   > f. 창 닫아도 접속 가능 : https://XXXXX(만든 워크스페이스의 이름).slack.com/services/new/incoming-webhook  
+* ubuntu 실행
+  > $cd elastalert/example_rules/  
+  > example_frequency.yaml 파일 수정 (계속 써왔던 rule 파일)  
+* rule 파일 수정
+  > 아래 내용을 rule 파일 마지막에 입력  
+  > alert:  
+  > - slack:  
+  >      slack_webhook_url: "(webhook에서 복사한 url)"  
+  >      slack_username_override: "ZEUS"  
+  >      slack_channel_override: "#(webhook에서 설정한 메세지 받을 채널이름)"  
+  >      slack_emoji_override: ":zap:"  
+  >      slack_msg_color: "danger"  
 
  ## 오류 수정 
  [[ windows 7 ]]
