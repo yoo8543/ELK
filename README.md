@@ -95,12 +95,12 @@
   > https://slack.com/intl/ko-kr/downloads/windows  
   > 로그인 후 워크스페이스 생성 (이하 elk)  
 * Incoming WebHook 설정
-  > a. slack 프로그램 내 만든 워크스페이스 접속  
-  > b. slack 찾아보기 -> 앱 -> incoming webhook 검색 후 추가  
-  > c. 홈페이지 자동 접속 -> slack에 추가 버튼 클릭 -> 메세지를 띄울 채널 선택  
-  > d. 수신 웹후크 통합 앱 추가 버튼 클릭  
-  > e. 웹후크 URL 복사해놓기
-  > f. 창 닫아도 접속 가능 : https://XXXXX(만든 워크스페이스의 이름).slack.com/services/new/incoming-webhook  
+  > 1. slack 프로그램 내 만든 워크스페이스 접속  
+  > 2. slack 찾아보기 -> 앱 -> incoming webhook 검색 후 추가  
+  > 3. 홈페이지 자동 접속 -> slack에 추가 버튼 클릭 -> 메세지를 띄울 채널 선택  
+  > 4. 수신 웹후크 통합 앱 추가 버튼 클릭  
+  > 5. 웹후크 URL 복사해놓기
+  > 6. 창 닫아도 접속 가능 : https://XXXXX(만든 워크스페이스의 이름).slack.com/services/new/incoming-webhook  
 * ubuntu 실행
   > $cd elastalert/example_rules/  
   > example_frequency.yaml 파일 수정 (계속 써왔던 rule 파일)  
